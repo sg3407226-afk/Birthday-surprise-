@@ -1,0 +1,116 @@
+DOCTYPE html>
+<html>
+<head>
+  <title>For My Crazy Twin 🎂✨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #ff9a9e, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    img {
+      width: 85%;
+      max-width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 12px 25px;
+      margin: 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      background: white;
+      color: #ff4e8a;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff4e8a;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .big {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="section">
+  <h1>Heyyyy Crazy Twin 😌🎉</h1>
+  <img src="pic1.jpg">
+  <p class="big">
+    Happy Birthday in Advance to my crazy twin 💖<br>
+    Few days to your 17th birthday 🎂✨
+  </p>
+
+  <button onclick="showMemories()">Click For More 👀</button>
+</div>
+
+<div id="memories" class="section hidden">
+  <h1>More Beautiful Moments 📸</h1>
+
+  <img src="pic2.jpg">
+  <img src="pic3.jpg">
+  <img src="pic4.jpg">
+
+  <button onclick="finalSurprise()">Final Surprise 🎁</button>
+</div>
+
+<div id="final" class="section hidden">
+  <h1>Almost 17!!! 🎉🔥</h1>
+
+  <img src="pic5.jpg">
+  <img src="pic6.jpg">
+
+  <p class="big">
+    You’re growing, glowing, and becoming more amazing every year ✨<br><br>
+    I’m lucky to call you my crazy twin ❤️<br><br>
+    Your 17th year will be special. Just wait and see 😉🎂
+  </p>
+</div>
+
+<script>
+  function showMemories() {
+    document.getElementById("memories").style.display = "block";
+  }
+
+  function finalSurprise() {
+    document.getElementById("final").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
